@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/9184dd39aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!---<img src="images/blackA.jpg" class="logo">----------THIS IS For logo-->  
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact-left">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                    <!---<p>UI/UX Designer</p> -->
+                    <h1>Hi, I'm<span> Adnan </span> <br> from NY </h1>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_2439.JPG">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Adnan Yeasir. I am an aspiring software engineer. Currently at Queens College pursuing my bachelor's degree.
+                         I want to design and create applications to solve real-world problems. I love to plan my day algorithmically so everything I do is as efficient as possible. 
+
+                        Now that I am in my junior year at Queen's college, I am eager to land an internship not only 
+                        to get real-world experience but also to learn how to plan and execute technical production and collaborate with a team on a shared goal.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+
+
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id ="skills">
+                            <ul>
+                                <!----skills--->
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Python</span><br>developing websites and software</li>
+                                <li><span>Microsoft Office(Full Suite)</span><br>Compiling information in a neat and readable manner</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id ="experience">
+                            <ul>
+                                <!----Experience--->
+                                
+                                <li><span>July 2022 - September 2022</span><br>The Animation Project</li>
+                                <li><span>June 2021 - August 2021</span><br>Assistant Teacher (MS217)</li>
+                                <li><span>September 2021 - December 2021</span><br>Math Teaching Assistant (Queens College)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id ="education">
+                            <ul>
+                                <!----Education--->
+                                <li><span>2021-present</span><br>Queens College</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------------------service-->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I provides customer with customized website design that's perfect for their business or personal site.
+                         I will work to create a design that matches their brand, 
+                         while giving customers a seamless user experience. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I will look for every possible ways to improve the product experience,
+                         even for bestselling products that have been on the market for years. 
+                         I will do this by making the product faster, easier to use, and more fun. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!----
+                <div>
+                    <i class="fa-solid fa-paw"></i>
+                    <h2>App Design</h2>
+                    <p>I design IOS apps which allows  </p>
+                    <a href="#">Learn more</a>
+                </div>
+                -->
+
+            </div>
+        </div>
+      </div>  
+      <!---------------------portfolio----------------->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Website-Building-Landscape-1280x640.jpg">
+                     <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>I designed this website to perform and look as seemless as possible. Weather it be on Desktop or mobile. 
+                            I utilized cool transition to give dept to the website.  This website was built using HTML, CSS and JAVASCRIPT.  </p>
+                             <a href="http://127.0.0.1:5500/index.html#header"><i class="fa-solid fa-link"></i></a> 
+                     </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/queen.jpg">
+                    <div class="layer">
+                        <h3>Fancy Eight Queens</h3>
+                        <p>A fancy chess board that prints out 92 solutions of a game with the queen displayed on the board. Made using Visual Studio and C++. Developed an understanding of algorithms and problem-solving using programming.
+                        </p>
+                             <a href="https://github.com/AdnanYeasir/FANCY8QUEENS"><i class="fa-solid fa-link"></i></a> 
+                     </div>
+                </div>
+                <div class="work">
+                    <img src="images/SnakeGame-feature.png">
+                        <div class="layer">
+                        <h3>Snake Game</h3>
+                        <p>Designed and made the classic snake game. Used Java as well as arithmetic to implement the movement of the snake and randomize apple spawns.
+                            Created custom animations using Java GUI.
+                            </p>
+                             <a href="https://github.com/AdnanYeasir/Snake"><i class="fa-solid fa-link"></i></a> 
+                     </div>
+                </div>
+            </div>
+            <a href=""class="btn" >See more</a>
+
+        </div>
+      </div>
+
+      <!--------------Contact-->
+      <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>adnanyeasirw@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9295199355</p>
+                    <div class="social-icons">
+
+                        <a href="https://www.instagram.com/yesssir_a/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/adnan-yeasir-84a16122b"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <!---I can put my resume here-->
+                    <a href="images/Adnan Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div> 
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name ="Name" placeholder="Your Name" required></input>
+                        <input type="email" name ="Email" placeholder="Your Email" required></input>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class ="btn btn2">Submit</button>
+                    </form>
+                    <span id ="msg"> </span>
+                </div>
+
+            </div>
+        </div>
+        <!---
+        <div class="copyright">
+            <p>Copyright @ kevin is a hoe <i class="fa-solid fa-heart"></i> by Adnan Yeasir</p>
+        </div>
+    --->
+      </div>
+
+
+
+
+
+    <!---using js to define tab links contents and the fuction opentab, we are using 
+        these so when we click on skills and experience we can view specific content-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link"); 
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab"); 
+            }
+            //we are using the tabname fuction to show wharever we click on
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+    </script>
+
+    <script>
+    var  sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwK2gZlpSpuEYm6vYKsiLzQTJqZ2yYxtGAOeSLtTbuGl7VfPmkiOc9-cGmHeQJkZk6F2Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML =""
+                
+            },5000)
+
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+        
+</html> 
